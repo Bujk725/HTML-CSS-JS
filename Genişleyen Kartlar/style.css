@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Twinkle Star', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-size: 3rem;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.bölüm{
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    border-radius: 50px;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.5s ease-in;
+    color: white;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.bölüm h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+}
+
+.bölüm.aktif{
+    flex: 5;
+}
+
+.bölüm.aktif h3{
+    opacity: 1;
+    transition:  opacity 0.3s ease-in 0.3s ;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+
+    .bölüm:nth-of-type(4),.bölüm:nth-of-type(5){
+        display: none;
+    }
+}
