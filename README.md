@@ -1,2 +1,6 @@
+#Küçük-Javascript-Projeleri
+
+
+
 # Small-Javascript-Projects
-We are create Small Javascript Projects
+I create Small Javascript Projects
