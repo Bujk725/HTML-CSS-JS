@@ -1,0 +1,123 @@
+/* 
+Ubuntu 
+Regular400 / Bold 700 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root{
+    --line-border-fill: #273cb0;
+    --line-border-empty: #bdbdbd;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "ubuntu", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h1{
+    color: #212121;
+    margin-bottom: 9rem;
+    font-size: 10vh;
+}
+
+.fa-html5{
+    color: #E54D26;
+}
+
+.fa-css3-alt{
+    color: #264DE4;
+}
+
+.fa-js-square{
+    color: #f7e018;
+    font-size: 2.7em;
+}
+
+.fa-react{
+    color: #61DAFB;
+}
+
+.fa-linux{
+    color: black;
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 3rem;
+    width: 80rem;
+}
+
+.progress-container:before{
+    content: "";
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    height: 5px;
+    width:100%;
+    z-index: -1;
+    transition: .4s ease;
+}
+
+.progress{
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    height: 5px;
+    width: 50%;
+    z-index: -1;
+    transition: .4s ease;
+}
+
+.target{
+    background-color: white;
+    color: #999;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease;
+}
+
+.active{
+    border-color: var(--line-border-fill);
+}
+
+.btn{
+    background-color: var(--line-border-fill);
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin: 5px;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+.btn:disabled{
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
