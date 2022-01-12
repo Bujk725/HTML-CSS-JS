@@ -1,1 +1,1 @@
-[Tıkla]https://romantic-stonebraker-8878b7.netlify.app/
+[Tıkla](https://romantic-stonebraker-8878b7.netlify.app/)
